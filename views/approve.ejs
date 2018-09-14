@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico">
+
+    <title>Node.js Bucket List App</title> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../style/cover.css" rel="stylesheet">
+    <link href="../style/signin.css" rel="stylesheet">
+    <script type="text/javascript" src="../script/jquery-1.11.2.js"></script>
+
+<!--     <script type="text/javascript">
+      $(function(){
+        $('#btnSignIn').click(function(evt){
+          evt.preventDefault();
+          $.ajax({
+            url: '/signin',
+            type:'POST',
+            success:function(response){
+              console.log(response);
+            },
+            error:function(error){
+              console.log(error);
+            }
+          })
+        })
+      })
+     
+    </script> -->
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <nav>
+                <ul class="nav masthead-nav">
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+
+          <div class="inner cover">
+              <form class="form-signin"  action="/action1" method="post">
+                <h2 class="email">approve an account</h2>
+                <label for="email" class="sr-only">number</label>
+                <input  type="number" ng-model="number" onKeyPress="if(this.value.length==10) return false;" min="0" id="number"  class="form-control" name="number" placeholder="number" required="">
+                
+                <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="submit">approve</button>
+              </form>
+                <p><%= status %></p>
+                <a href="/">home page</a>
+          </div>
+          <div class="mastfoot">
+            <div class="inner">
+             
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+      
+  </body>
+</html>
